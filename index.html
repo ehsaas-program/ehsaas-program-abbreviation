@@ -56,6 +56,21 @@
       "description": "Discover the Ehsaas Program, an initiative focused on poverty alleviation and social welfare in Pakistan. Learn about its impact and benefits today."
     }
     </script>
+    <script>
+        
+        document.addEventListener('contextmenu', event => event.preventDefault());
+
+       
+        document.onkeydown = function(e) {
+            
+            if (e.ctrlKey && (e.key === 'u' || e.key === 's' || e.key === 'i' || e.key === 'j')) {
+                return false;
+            }
+            if (e.key === 'F12') {
+                return false;
+            }
+        };
+    </script>
     <style>
         body {
             font-family: Arial, sans-serif;
